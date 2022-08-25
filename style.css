@@ -19,6 +19,11 @@ main {
   flex-wrap: wrap;
 }
 
+h1, h2 {
+  text-align: center;
+  margin-top: -2px;
+}
+
 .one {
   background: #fefefe;
   border-radius: 10px;
@@ -116,5 +121,132 @@ main {
   }
 }
 
+.already, .login {
+  text-align: center;
+}
+#email, #password {
+  width: 100%;
+  padding: 10px 2px;
+}
+#submit-btn {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+}
 
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+}
+.giostra, #navigation {
+  flex: initial;
+  display: block;
+}
+.giostra {
+  overflow: hidden;
+  width: 100%;
+  height: 290px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.p-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+#button_a:checked ~ .giostra .p-wrapper {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+#button_b:checked ~ .giostra .p-wrapper {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.nav {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+[class^="panel_"] {
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+}
+[class^="label_"] {
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  line-height: 22px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 20px;
+  color: #aaa;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+[class^="label_"]:hover {
+  color: #444;
+  background-color: #4898d6;
+  transition: all 0.3s ease;
+}
+#button_a:checked ~ .nav .label_a,
+#button_b:checked ~ .nav .label_b {
+   cursor: default;
+   color: #fff;
+   background-color: #222;
+}
+
+.e_label, .p_label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.option {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  border-radius: 20px;
+  color: #fafafa;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.option:hover {
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.e_mail {
+  background-color: #f4f0e0;
+  color: #222;
+}
+.goog {
+  background-color: #DB4437;
+}
+.fb {
+  background-color: #4267B2;
+}
+.apple {
+  background-color: #979797;
+}
+.option i {
+  position: absolute;
+  right: 25px;
+  font-size: 20px;
+}
 

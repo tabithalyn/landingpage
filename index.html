@@ -21,8 +21,54 @@
       This is the main thing.
     </div>
     <div class="two">
-      This is the second thing.
-    </div>
+      <div class="formage">
+        <div id="container">
+
+          <input hidden type="radio" name="carousel-control" id="button_a" checked/>
+          <input hidden type="radio" name="carousel-control" id="button_b"/>
+
+            <div class="giostra">
+              <div class="p-wrapper">
+
+              <section class="panel_a">
+	              <div class="signup">
+                  <h1>Sign Up</h1>
+                  <form action="/">
+                    <label for="email" class="e_label">Email:</label><br>
+                    <input type="email" name="email" id="email">
+                  <br>
+                    <label for="password" class="p_label">Password:</label><br>
+                    <input type="password" name="password" id="password">
+                  <br><br>
+                    <input type="submit" value="Sign Up" id="submit-btn">
+                  </form>
+                </div>
+	            </section>
+
+              <section class="panel_b">
+                <div class="login">
+                  <h1>Log In</h1>
+                  <div class="login-options">
+                      <span class="option e_mail">Email<i class="fa fa-fw fa-envelope"></i></span>
+                      <span class="option goog">Google<i class="fa fa-fw fa-google"></i></span>
+                      <span class="option fb">Facebook<i class="fa fa-fw fa-facebook"></i></span>
+                      <span class="option apple">Apple<i class="fa fa-fw fa-apple"></i></span>
+                  </div>
+                </div>
+	            </section>
+
+              </div> <!-- p-wrapper -->
+            </div> <!-- giostra -->
+  
+            <div class="nav">
+              <label for="button_a" class="label_a"> <span>Sign Up</span> </label>
+              &nbsp;
+              <label for="button_b" class="label_b"> <span>Log In</span> </label>
+            </div>
+
+        </div> <!-- container -->
+      </div> <!-- formage -->
+    </div> <!-- two -->
   </main>
 
   <script src="main.js"></script>
