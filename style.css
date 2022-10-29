@@ -24,10 +24,14 @@ h1, h2 {
   margin-top: -2px;
 }
 
+h1.grande {
+  font-size: 80px;
+}
+
 .one {
-  background: #fefefe;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px rgb(54, 43, 29);
+  background: transparent;
+  border-radius: 0px;
+  /*box-shadow: 1px 1px 6px rgb(54, 43, 29);*/
   width: 350px;
   height: 350px;
   padding: 10px;
@@ -47,8 +51,9 @@ h1, h2 {
 
 .topnav {
   width: 100%;
-  background-color: #555;
+  background-color: transparent;
   overflow: auto;
+  border-bottom: 1px solid #222;
 }
 .topnav a {
   float: right;
@@ -81,9 +86,7 @@ main {
 }
 
 .one {
-  background: #fefefe;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px rgb(54, 43, 29);
+  border-radius: 0px;
   width: 350px;
   height: 350px;
   padding: 10px;
